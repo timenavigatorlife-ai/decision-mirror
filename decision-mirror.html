@@ -655,7 +655,6 @@ const STEPS=[
   ()=>addBotMsg(tr('ask_photo_past'),null,null,true,true),                        // 23
   ()=>generateAnalysis(),                                                         // 24
 ];
-];
 
 function nextStep(){updateProgress();if(STEPS[step])STEPS[step]();}
 function updateProgress(){document.getElementById('progressFill').style.width=Math.round((step/(STEPS.length-1))*100)+'%';}
